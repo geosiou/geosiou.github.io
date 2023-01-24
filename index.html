@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!-- Για να έχει το input ΑΚΡΙΒΩΣ 5 χαρακτήρες: 
+ <input type="text" name="new-guess" id="new-guess" style="width:5ch">
+ -->
+
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μάντεψε την έκπτωση</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <br>
+    <header>Παιχνίδι: μάντεψε την έκπτωση!</header>
+    <br>
+    <section id="instructions">
+        Έχουν υποβληθεί οι προσφορές για την τελευταία μας εργάρα!
+        <br>
+        <br>
+        Προσπάθησε να μαντέψεις την έκπτωση του πρώτου μειοδότη σε 10 το πολύ προσπάθειες.
+        <br>
+        <br>
+        Κάθε φορά θα παίρνεις απάντηση για το αν η έκπτωση που μάντεψες είναι μεγαλύτερη
+        ή μικρότερη από την σωστή.
+        <br>
+        <br>
+    </section>
+    <section id="guess">
+        <label for="new-guess">Μάντεψε: </label>
+        <input type="text" name="new-guess" id="new-guess" size="5">
+        <button id="check"> Έλεγχος </button>
+
+    </section>
+    <section>
+        <div id="message">  </div>
+        <div id="low-high"></div>
+        <button id= "restart"> Παίξε ξανά </button>
+    </section>    
+</body>
+</html>

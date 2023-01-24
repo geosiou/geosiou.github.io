@@ -1,0 +1,58 @@
+:root {
+    --btn-color: teal;   /* χρώμα πλήκτρων */
+    --btn-text: whitesmoke;   /* χρώμα κειμένου πλήκτρων */
+    --msg-win-color: rgb(0, 128, 32);  /* χρώμα μηνύματος επιτυχίας */
+    --msg-wrong-color: crimson;  /* χρώμα μηνύματος αποτυχίας */
+    --msg-text:floralwhite;  /* χρώμα κειμένου μηνύματος */
+	--low-high-color: brown;  /* χρώμα ιστορικού προσπαθειών */
+}
+
+
+* {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#instructions {
+    padding: 0.5em;
+}
+
+header {
+    font-size: 1.2em;
+}
+
+#check, #restart {
+    background-color: var(--btn-color);
+    color: var(--btn-text);
+    font-size: 1.1em;
+    border: none;
+    padding: 3px 7px;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+#new-guess {
+    font-size: 1.1em;
+    padding: 2px;
+}
+
+#guess {
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+}
+
+#restart {
+    visibility: hidden;
+}
+
+#message {
+    font-size: 1.1em;
+    text-align: center;
+    color: var(--msg-text);
+    margin: 0.5em;
+}
+
+#low-high {
+    margin: 0 0 0.5em 0.5em;
+    color: var(--low-high-color);
+}
