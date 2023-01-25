@@ -53,13 +53,13 @@ function processGuess(newValue){
             message.style.backgroundColor="var(--msg-win-color)";
             message.textContent="Μπράβο το βρήκες!";
             if (newNum > 65) {
-                message.textContent="Μπράβο το βρήκες! Ασφαλτοστρώσεις ήταν; Δεν γλιτώνουμε..."
+                message.textContent="Μπράβο το βρήκες! (Ασφαλτοστρώσεις ήταν; Δεν γλιτώνουμε...)"
             }
             else if (newNum <= 15) {
-                message.textContent="Μπράβο το βρήκες! Φτιαγμένη η δουλειά..."
+                message.textContent="Μπράβο το βρήκες! (Φτιαγμένη η δουλειά...)"
             }
-            else if (newNum > 15 && newNum <= 35) {
-                message.textContent="Μπράβο το βρήκες! Τυχερός ήταν!"
+            else if (newNum > 15 && newNum <= 30) {
+                message.textContent="Μπράβο το βρήκες! (Τυχερός ήταν!)"
             }
             return "win";
         }
@@ -70,7 +70,7 @@ function processGuess(newValue){
         }
         else {
             message.style.backgroundColor="var(--msg-wrong-color)";
-            message.textContent="Λάθος, " + ((newNum < theGuess) ? "είσαι πιο χαμηλά" : "το ξεπέρασες");
+            message.textContent="Λάθος, η έκπτωση του εργολάβου είναι " + ((newNum < theGuess) ? "υψηλότερη" : "χαμηλότερη");
         }
     }
 }
